@@ -1,0 +1,74 @@
+
+::ng-deep {
+  .ql-editor, .ql-editor * {
+    font-family: 'Courier Prime', 'Courier New', monospace;
+    line-height: 1pc;
+    font-size: 12pt;
+    &:hover{
+      cursor: text;
+    }
+  }
+  .ql-editor {
+    padding: 1in 0;
+    overflow-y: unset;
+    height: auto;
+  }
+  span.element {
+    font-weight: bold;
+    background-color: yellow;
+  }
+  p.action {
+  }
+  p.transition {
+    text-align: right;
+  }
+  p.heading {
+    font-weight: bold;
+    text-transform: uppercase;
+    &:not(:first-child){
+      margin-top: 12pt;
+    }
+  }
+  p.shot, p.transition {
+    text-transform: uppercase;
+  }
+  p.character {
+    text-transform: uppercase;
+    width: 4in;
+    margin-left: 3.25in;
+  }
+  p.parenthetical {
+    margin-left: 2.85in;
+    width: 2.5in;
+  }
+  p.dialogue {
+    width: var( --script-dialogue-font-size, 3.5in );
+    margin-left: 2.25in;
+  }
+  p.action, p.heading, p.transition, p.general, p.shot {
+    width: 6in;
+    margin-left: 1.25in;
+    &:not(:last-child){
+      margin-bottom: 12pt;
+    }
+  }
+
+  p.dialogue {
+    + .action, + .transition, + .general, + .shot, + .character {
+      margin-top: 12pt;
+    }
+    + .heading{
+      margin-top: 24pt;
+    }
+  }
+
+  .ql-container {
+    border: none !important;
+  }
+  .ql-editor.ql-blank::before {
+    content: '';
+    font-size: 12pt;
+    font-style: normal;
+    margin-left: 1.25in;
+  }
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "header": false,
+    "content": [
+      {
+        "type": "general",
+        "text": "At the beginning of a script, there may be text that IS NOT included in a scene."
+      }
+    ]
+  },
+  {
+    "header": "INT. WAREHOUSE - NIGHT",
+    "content": [
+      {
+        "type": "action",
+        "text": "We’re underwater, watching a fat catfish swim along."
+      },
+      {
+        "type": "character",
+        "text": "We’re underwater, watching a fat catfish swim along."
+      }
+    ]
+  }
+]

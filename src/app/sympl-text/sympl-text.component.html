@@ -1,0 +1,15 @@
+<div>
+  <label>Upload the original script here</label>
+  <input type="file" (change)="importFDX( $event )" accept=".fdx">
+</div>
+
+<div>
+  <label>Upload the NEW VERSION of script here AFTER you add some annotations</label>
+  <input type="file" (change)="importModifiedFDX( $event )" accept=".fdx">
+</div>
+
+<div>
+  <button (click)="updateScript()">Log updated script with annotations</button>
+</div>
+
+<quill-editor (onEditorCreated)="editorCreated( $event )" (mouseup)="mouseup( $event )"></quill-editor>
